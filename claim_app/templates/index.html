@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Claim Page</title>
+</head>
+<nav class="nav">
+    <p>Welcome to Claims Central</p>
+    <p>A convenient way to file a claim!</p>
+</nav>
+<body>
+    <div class="container">   
+        <form action="create_policyholder"class="form_containet">
+        <fieldset>
+            <legend>Policy Holder Registration</legend>
+            <p>Name: <input type="text" name="name"></p>
+            <p>Address: <input type="text" name="address"></p>
+            <p>City: <input type="text" name="city"></p>
+            <p>State: <input type="text" name="state"></p>
+            <p>Zip: <input type="text" name="zip_code"></p>
+            <p>Policy Number: <input type="text" name="policy_number"></p>
+        <button type="button" class="btn btn-default">Claim Generator</button>
+        </fieldset>
+        </form>
+    </div>
+</body>
+</html>
